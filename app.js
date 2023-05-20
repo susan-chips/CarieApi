@@ -1,14 +1,20 @@
-// http(launch a server, send request).
-//  https(launch a ssl server) , os, fs. path
-
-// reguire allows you to import
-
 const http = require('http');
 
-const routes = require('./routes');
+const express = require('express');
 
-console.log(routes.Dummy);
-const server = http.createServer(routes.Handler); 
+const app = express();
+
+
+app.use((req, res, next)=>{
+    console.log('IN the middleware')
+    next();
+});
+app.use((req, res, next)=>{
+    console.log('IN another middleware')
+});
+
+
+const server = http.createServer(app); 
 
 server.listen(3000);
 
