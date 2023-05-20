@@ -1,0 +1,19 @@
+{
+  "name": "node-first-app",
+  "version": "1.0.0",
+  "description": "Complete ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "Susan",
+    "\\"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
