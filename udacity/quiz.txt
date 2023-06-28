@@ -23,3 +23,31 @@ names.append("Eugenia")
 print(sorted(names))
 
 ["Albert", "Ben", "Carol", "Donna"]
+
+
+set 
+
+numbers = [1, 2, 6, 3, 1, 1, 6]
+unique_nums = set(numbers)
+print(unique_nums)
+
+{1, 2, 3, 6}
+
+What would the output of the following code be?
+
+a = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+b = set(a)
+print(len(a) - len(b))
+
+answer = 6
+
+
+Consider the following code:
+
+a = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+b = set(a)
+b.add(5)
+b.pop()
+After executing this code, will the number 5 be a part of the set b?
+
+maybe.
